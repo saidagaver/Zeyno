@@ -19,7 +19,7 @@ const STANZAS = [
   ['Onun adı Dünya Gözəli','Özü də gözəllər gözəli','Qoy əbədi parlasın','Sevgi dolu gözləri'],
   ['Qışda qar yağanda','Yazda şimşək çaxanda','Şair yenə səndən yazır','Qələmi ələ alanda'],
   ['Gəlməyəsən pis baxışına','Düşəsən gözəl vaxtına','Mələktək qəlbi var','Heç inanmazsan yaşına'],
-  ['Sevdiyi rəngdir çəhrayı','Dörd böyüklərdən Beşiktaşı','Qısqanır bütün dənizlər','Gəzərkən dalğalanan saçlarına'],
+  ['Sevdiyi rəngdir çəhrayı','Dörd böyüklərdən Beşiktaşı','Qısqanır bütün dənizlər','Gəzərkən dalğalanan saçlarını'],
   ['Bakı... Sənin şad günündür','Bu gün Zeynəbin ad günüdür','Günəşli buludlu payız günüdür','Dostumun dünyada göz açdığı günüdür']
 ];
 const EYES_STANZA = 0;   // "Sevgi dolu gözləri" – işıq azalır, gözlər parlayır
