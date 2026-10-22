@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10031b">
+<title>Ad Günün Mübarək, Zeynəb! 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"><div class="bN"></div><div class="bP"></div><div class="bG"></div></div>
+<div class="rays" id="rays"></div>
+<canvas id="fx"></canvas>
+<div id="dim"></div>
+<div id="eyes"><i></i><i></i></div>
+
+<div id="final">
+  <div class="ring"></div>
+  <div class="big" id="bigNum">5</div>
+</div>
+
+<div id="cinematic">
+  <div class="cineGlow"></div>
+  <div class="cineRays"></div>
+  <div class="cineParticles"></div>
+  <div id="cineText"></div>
+  <div id="cineTitle">AD GÜNÜN MÜBARƏK! 🌸</div>
+  <button class="btn" id="skip">Keç</button>
+</div>
+
+<main class="card" id="card">
+  <section id="wait">
+    <div class="seal">🔐🌷</div>
+    <h1>Bir sirr var...</h1>
+    <p class="sub">Bu səhifə <strong>24 oktyabr 00:00</strong>-da özü açılacaq. Səbrlə gözlə 😉</p>
+    <div class="timer" role="timer" aria-live="off">
+      <div class="tb"><div class="num" id="d">00</div><div class="lbl">gün</div></div>
+      <div class="tb"><div class="num" id="h">00</div><div class="lbl">saat</div></div>
+      <div class="tb"><div class="num" id="m">00</div><div class="lbl">dəqiqə</div></div>
+      <div class="tb"><div class="num" id="s">00</div><div class="lbl">saniyə</div></div>
+    </div>
+    <p class="lockmsg">Geri sayım bitən anda hədiyyə özü açılacaq 🔒</p>
+  </section>
+
+  <section id="celeb">
+    <h1>AD GÜNÜN MÜBARƏK! 🌸</h1>
+    <div class="divider"><i></i><span>🌸</span><i></i></div>
+    <p class="greeting" id="greet">Əziz <span class="name">Zeynəb</span>,</p>
+    <p class="intro rv" id="intro">Ad gününü şeirlə təbrik etmək istədim, ümid edirəm ki bəyənərsən.</p>
+    <div class="poem" id="poem"></div>
+    <p class="closing rv" id="closing">Ad gününü təbrik edirəm, istədiyin gələcəyin<br>səninlə olması diləyi ilə 🎊</p>
+    <div class="flowers rv" id="flowers">🌸 🌷 🌼 🌺 🌸</div>
+
+    <div class="wishbox rv" id="wishbox">
+      <p class="wish">Bir dilək tut... ✨</p>
+      <button id="cake" aria-label="Şamları söndür">
+        <svg viewBox="0 0 240 230" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd6e4"/><stop offset="1" stop-color="#ff8fb3"/></linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3d9ff"/><stop offset="1" stop-color="#a370f7"/></linearGradient>
+            <radialGradient id="fg"><stop offset="0" stop-color="#fff6c8"/><stop offset="1" stop-color="#ffb347"/></radialGradient>
+          </defs>
+          <ellipse cx="120" cy="214" rx="105" ry="10" fill="#000" opacity=".25"/>
+          <rect x="30" y="140" width="180" height="70" rx="12" fill="url(#g2)"/>
+          <rect x="52" y="96" width="136" height="50" rx="11" fill="url(#g1)"/>
+          <path d="M52 108q17 14 34 0t34 0 34 0 34 0" fill="none" stroke="#fff" stroke-width="5" opacity=".7" stroke-linecap="round"/>
+          <path d="M30 152q15 14 30 0t30 0 30 0 30 0 30 0 30 0" fill="none" stroke="#fff" stroke-width="5" opacity=".6" stroke-linecap="round"/>
+          <g fill="#ffd166"><rect x="86" y="62" width="8" height="36" rx="3"/><rect x="116" y="58" width="8" height="40" rx="3"/><rect x="146" y="62" width="8" height="36" rx="3"/></g>
+          <circle class="gl" cx="90" cy="48" r="20" fill="#ffd166" opacity=".25"/>
+          <circle class="gl" cx="120" cy="44" r="20" fill="#ffd166" opacity=".25"/>
+          <circle class="gl" cx="150" cy="48" r="20" fill="#ffd166" opacity=".25"/>
+          <ellipse class="fl f1" cx="90" cy="50" rx="6" ry="11" fill="url(#fg)"/>
+          <ellipse class="fl f2" cx="120" cy="46" rx="6" ry="11" fill="url(#fg)"/>
+          <ellipse class="fl f3" cx="150" cy="50" rx="6" ry="11" fill="url(#fg)"/>
+        </svg>
+        <span class="smoke s1"></span><span class="smoke s2"></span><span class="smoke s3"></span>
+      </button>
+      <p class="cakeHint" id="cakeHint">Şamlara toxun, söndür! ✨</p>
+      <p class="wishmsg" id="wishmsg"></p>
+    </div>
+
+    <button class="btn rv" id="secretBtn">Bir şey hələ bitməyib...</button>
+  </section>
+</main>
+
+<button class="btn" id="music" hidden>♫ Musiqini aç</button>
+
+<div id="secret" role="dialog" aria-modal="true" aria-label="Gizli mesaj">
+  <div class="card2">
+    <p class="tag">gizli mesaj</p>
+    <p class="m">Bunu sadəcə ad günün olduğu üçün hazırlamadım.<br>Sənin üzündə bir dəfə də olsa təbəssüm yaratmaq istədim. ❤️</p>
+    <button class="btn" id="secretClose">Bağla</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
